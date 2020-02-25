@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #231f20;
+    color: #ad974f;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+}
+
+h1, p {
+    margin: 0;
+    user-select: none;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    max-width: 1800px;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div[class^='col-'] {
+    padding: 0;
+}
+
+.content-box {
+    height: 600px;
+}
+
+header {
+    background-color: #8e793e;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.main-banner {
+    height: 600px;
+    background-image: url(../img/landing-bg.jpg)
+}
+
+.main-banner div {
+    height: 100%;
+}
+
+.main-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-banner-text h1, .main-banner-text p {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-banner-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.main-banner-text p {
+    font-size: 42px;
+    margin-top: 40px;
+}
+
+.content-row {
+    margin: 100px 0;
+    display: flex;
+    width: 100%;
+}
+
+.content-row div {
+    height: 100%;
+}
+
+.first-row-left {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-row h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px 20px 40px;
+}
+
+.content-row p {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.first-row-right {
+    box-shadow: 0px 0px 30px 0px white;
+}
+
+.content-row img {
+    width: 100%;
+    height: 100%;
+}
+
+.second-row-left {
+    box-shadow: 0px 0px 30px 0px white;
+}
+
+.second-row-right {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-row-left {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-row-right {
+    box-shadow: 0px 0px 30px 0px black;
+}
