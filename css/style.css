@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #231f20;
-    color: #ad974f;
+    color: #Ffd74c;
     overflow-x: hidden;
     font-family: 'Roboto';
 }
@@ -15,7 +15,7 @@ h1, p {
 .container {
     width: auto;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1440px;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
@@ -30,13 +30,31 @@ div[class^='col-'] {
 }
 
 header {
-    background-color: #8e793e;
+    background-color: #Ffd74c;
     height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+footer {
+    background-color: #Ffd74c;
+    height: 30px;
+    width: 100%;
+    color: #231f20;
+    margin: 50px 0; 
+}
+
+footer .container {
+    align-items: center;
+    height: 100%;
+}
+
+footer p {
+    text-align: center;
+    margin: 0 auto;
 }
 
 main {
@@ -103,16 +121,21 @@ main {
     margin: 20px;
 }
 
-.first-row-right {
+.first-row-right, .third-row-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-row-right img {
     box-shadow: 0px 0px 30px 0px white;
 }
 
 .content-row img {
-    width: 100%;
-    height: 100%;
+    max-height: 600px;
+    max-width: 100%;
 }
 
-.second-row-left {
+.second-row-left img {
     box-shadow: 0px 0px 30px 0px white;
 }
 
@@ -130,6 +153,62 @@ main {
     justify-content: center;
 }
 
-.third-row-right {
+.third-row-right img {
     box-shadow: 0px 0px 30px 0px black;
+}
+
+.fourth-row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+}
+
+.fourth-row-block {
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 0px 30px 0px white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.fourth-row-block img {
+    position: absolute;
+    right: 50px;
+    top: -150px;
+    z-index: 2;
+}
+
+.fourth-row-block p {
+    flex: 1;
+    margin: 0;
+}
+
+.fourth-row-block h1 {
+    font-size: 40px;
+    margin: 0 0 60px;
+}
+
+.button {
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0 32px;
+    transition: all .3s;
+    color: #231f20;
+    background-color: #Ffd74c;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #Ffd74c;
+    border: 1px solid #Ffd74c;
 }
